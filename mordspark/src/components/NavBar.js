@@ -30,7 +30,7 @@ export default function NavBar() {
     // Conditionally add the 'scrolled' class
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-logo">
-        <a href="/home"><img src={logo} alt="Logo" className="logo-image"/></a>
+        <a href="/home"><img src={logo} alt="Logo" className="logo-image" style={{ marginLeft: "30px" }}/></a>
       </div>
 
       {/* The rest of your navbar code remains the same... */}

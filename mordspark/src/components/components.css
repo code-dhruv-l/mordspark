@@ -25,6 +25,13 @@
     border-radius: 25px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     padding: 15px 30px;
+
+    position: fixed;
+    top: 10px; /* hide initially */
+    width: 100%;
+    transition: top 0.5s ease-in-out, background 0.4s ease-in-out;
+    z-index: 999;
+    padding: 15px 0;
 }
 
 /* Flex child 1: Logo */
@@ -155,6 +162,9 @@
     background: transparent; /* Make background more solid */
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     padding: 15px 5%; /* Adjust padding for full-width layout */
+
+    top: 0; /* slide into view */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 /* Hide hamburger menu by default on desktop */
 .navbar-toggle {
