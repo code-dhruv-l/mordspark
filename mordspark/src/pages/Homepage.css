@@ -28,7 +28,7 @@
 }
 
 .homepage-text h1 {
-    font-size: 3.5rem; /* Larger font for desktop */
+    font-size: 3rem; /* Larger font for desktop */
     font-weight: 700;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -421,11 +421,19 @@
     .homepage-text h1 {
         font-size: 2.8rem;
         white-space: normal; /* Allow title to wrap */
+        font-family: "Krona One", sans-serif;
     }
     .sub-text {
         align-items: center;
     }
 
+    .sub-text p{
+        font-family: "Krona One", sans-serif;
+    }
+
+    .highlight{
+        font-family: "Krona One", sans-serif;
+    }
     /* About */
     .about-content {
         flex-direction: column;

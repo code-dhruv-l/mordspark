@@ -1,8 +1,8 @@
 import React from 'react';
 import './Homepage.css';
-import temphome from '../components/Image/homeimg.jpg'; 
 import about from '../components/Image/aboutus.png'; 
 import service from '../components/Image/service.png';
+import heroVideo from '../components/Image/mainvideo.mp4'; 
 import {
   MDBContainer,
   MDBRow,
@@ -125,23 +125,37 @@ export default function HomePage() {
       {/* Hero Section */}
       
 <section className="hero-section">
-  <img src={temphome} alt="Home" className="homepage-image" />
+  {/* --- REPLACE THE IMG TAG WITH THIS VIDEO TAG --- */}
+  <video 
+    src={heroVideo} 
+    alt="Background video of business and technology" 
+    className="homepage-image" 
+    autoPlay 
+    loop 
+    muted 
+    playsInline 
+  >
+    Your browser does not support the video tag.
+  </video>
+  {/* --- END OF REPLACEMENT --- */}
 
   <div className="homepage-text">
-    <h1>Grow Your Business With Us</h1>
-    <h2>
+    <h1 style={{fontFamily: "Krona One, sans-serif" }}>Grow Your Business With Us</h1>
+    <h2 style={{fontFamily: "Krona One, sans-serif" }}>
       We{" "}
-      <span className="highlight" style={{ borderRadius: "50px" }}>
+      <span className="highlight" style={{ borderRadius: "50px", fontFamily: "Krona One, sans-serif" }}>
         Design,
       </span>
     </h2>
-    <div className="sub-text">
+    <div className="sub-text" style={{fontFamily: "Krona One, sans-serif" }}>
       <p>Develop,</p>
       <p>and Deliver</p>
       <p>Experiences that Matter.</p>
     </div>
   </div>
 </section>
+
+
 
 
       {/* About Section */}
