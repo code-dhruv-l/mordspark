@@ -16,7 +16,7 @@
     width: 90%;
     max-width: 1200px;
     z-index: 1000;
-
+    
     /* Glassmorphism style */
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);

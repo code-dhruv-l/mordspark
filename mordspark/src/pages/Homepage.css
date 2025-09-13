@@ -230,15 +230,16 @@
 }
 
 .outlineTitle {
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(2.5rem, 6vw, 5rem);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     font-family: "Krona One", sans-serif;
-    color: transparent;
+    color: #ffffff;
     -webkit-text-stroke: 1px #000;
+    margin-top: 40px;
 }
 
 .steps {
