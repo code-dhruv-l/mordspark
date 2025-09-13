@@ -1,3 +1,499 @@
-h1{
-    background-color: red;
+/* ==========================================================================
+   Global & Hero Section
+   ========================================================================== */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Use viewport height for full-screen feel */
+    overflow: hidden;
+}
+
+.homepage-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    object-position: center;
+}
+
+.homepage-text {
+    position: absolute;
+    top: 50%;
+    left: 15%; /* Positioned on the left for desktop */
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 600px;
+    text-align: left;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.homepage-text h1 {
+    font-size: 3.5rem; /* Larger font for desktop */
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.homepage-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.homepage-text .highlight {
+    background: rgba(0, 94, 255, 0.3);
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+.sub-text p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+
+.about-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-left {
+    flex: 1;
+}
+
+.about-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.about-left p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+.know-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.know-more-btn:hover {
+    background-color: #444;
+}
+
+.about-right {
+    flex: 1;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.stat-box h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.stat-box h3 {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* ==========================================================================
+   Services Section
+   ========================================================================== */
+
+.services-container {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.services-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.image-placeholder {
+    flex: 1;
+}
+
+.service-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.cards-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.service-card h3 {
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==========================================================================
+   Process Of Work Section
+   ========================================================================== */
+.process-container {
+    padding: 80px 20px;
+    background: white;
+}
+
+.title-wrapper {
+    position: relative;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.bigTitle {
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+    font-family: "Krona One", sans-serif;
+}
+
+.outlineTitle {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: "Krona One", sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+    text-align: center;
+}
+
+.hexagon {
+    width: 110px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(50% 0%, 93% 24%, 93% 76%, 50% 100%, 7% 76%, 7% 24%);
+    transition: transform 0.2s ease;
+}
+
+.hexagon:hover {
+    transform: translateY(-6px);
+}
+
+.stepTitle {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.arrow {
+    width: 90px;
+    height: 36px;
+    margin-top: -50px;
+}
+
+.arrow line {
+    stroke-linecap: round;
+}
+
+
+/* ==========================================================================
+   Client Review Section
+   ========================================================================== */
+
+.client-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: -40px; /* Pull the carousel up */
+}
+
+.testimonial-card {
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+.testimonial-carousel .carousel-item {
+    position: relative;
+}
+
+.nationality-flag-corner {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.nationality-flag-corner img {
+    width: 40px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.testimonial-carousel .carousel-indicators {
+    position: absolute;
+    bottom: -40px;
+}
+
+/* ==========================================================================
+   Contact Section
+   ========================================================================== */
+.contact-section {
+    padding: 80px 20px;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-form, .contact-illustration {
+    flex: 1;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-box label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: -10px;
+}
+
+.form-box input,
+.form-box textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box; /* Important for padding and width */
+}
+
+.form-box button {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #4A90E2, #357ABD);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    align-self: flex-start; /* Button doesn't stretch */
+}
+
+.contact-illustration img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==========================================================================
+   <<< --- MEDIA QUERIES FOR RESPONSIVENESS --- >>>
+   ========================================================================== */
+
+/* --- Medium devices (tablets, less than 992px) --- */
+@media (max-width: 992px) {
+    /* Hero */
+    .homepage-text {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .homepage-text h1 {
+        font-size: 2.8rem;
+        white-space: normal; /* Allow title to wrap */
+    }
+    .sub-text {
+        align-items: center;
+    }
+
+    /* About */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Services */
+    .services-content {
+        flex-direction: column;
+    }
+
+    /* Contact */
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+/* --- Small devices (landscape phones, less than 768px) --- */
+@media (max-width: 768px) {
+    /* General */
+    h1 { font-size: 2.2rem !important; }
+    h2, .client-title, .services-main-title, .about-title { font-size: 1.8rem !important; }
+
+    /* Hero */
+    .homepage-text h1 { font-size: 2.2rem !important; }
+    .homepage-text h2 { font-size: 1.5rem; }
+    .sub-text p { font-size: 1.2rem; }
+
+    /* About */
+    .stats-grid {
+        grid-template-columns: 1fr; /* Stack stats boxes */
+    }
+    
+    /* Services */
+    .cards-wrapper {
+        width: 100%;
+    }
+    .service-card {
+        padding: 24px;
+    }
+
+    /* Process */
+    .steps {
+        gap: 10px;
+    }
+    .arrow {
+        display: none; /* Hide arrows on mobile */
+    }
+    .step {
+        width: 100px;
+    }
+    .hexagon {
+        width: 80px;
+        height: 70px;
+    }
+
+    /* Review Carousel */
+    .testimonial-carousel .MDBRow > .MDBCol {
+        flex-direction: column !important; /* Stack avatar and text */
+    }
+    .testimonial-carousel img {
+        margin-bottom: 20px !important;
+    }
+    .testimonial-carousel .text-lg-start {
+        text-align: center !important; /* Center text on mobile */
+    }
+
+    /* Contact */
+    .contact-form {
+        width: 100%;
+    }
 }

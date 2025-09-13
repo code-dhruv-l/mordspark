@@ -1,14 +1,20 @@
-import './App.css';
-import HomePage from './pages/HomePage';
-import NavBar from './components/NavBar';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages/HomePage";
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <HomePage />
-      
-    </div>
+    <Router>
+      <NavBar />   {/* Always visible */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+      <Footer />   {/* Always visible */}
+    </Router>
   );
 }
 
