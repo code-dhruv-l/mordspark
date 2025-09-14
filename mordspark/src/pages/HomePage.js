@@ -141,12 +141,12 @@ export default function HomePage() {
 
   <div className="homepage-text">
     <h1 style={{fontFamily: "Krona One, sans-serif" }}>Grow Your Business With Us</h1>
-    <h2 style={{fontFamily: "Krona One, sans-serif" }}>
+    <h3 style={{fontFamily: "Krona One, sans-serif"}}>
       We{" "}
       <span className="highlight" style={{ borderRadius: "50px", fontFamily: "Krona One, sans-serif" }}>
         Design,
       </span>
-    </h2>
+    </h3>
     <div className="sub-text" style={{fontFamily: "Krona One, sans-serif" }}>
       <p>Develop,</p>
       <p>and Deliver</p>
@@ -175,7 +175,7 @@ export default function HomePage() {
               impact.
             </p>
             <Link
-              to="/about"
+              to="/About"
               className="know-more-btn"
               style={{ backgroundColor: "#fff", color: "#000", border: "1px solid" }}
             >
@@ -208,7 +208,7 @@ export default function HomePage() {
 
       <section className="services-container">
       <h2 className="services-main-title">
-        🖥️ Our service
+        <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="#414141ff"><path d="M280-720v-40q0-33 23.5-56.5T360-840h240q33 0 56.5 23.5T680-760v40h28q24 0 43.5 13.5T780-672l94 216q3 8 4.5 16t1.5 16v184q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-184q0-8 1.5-16t4.5-16l94-216q9-21 28.5-34.5T252-720h28Zm80 0h240v-40H360v40Zm-80 240v-40h80v40h240v-40h80v40h96l-68-160H252l-68 160h96Zm0 80H160v160h640v-160H680v40h-80v-40H360v40h-80v-40Zm200-40Zm0-40Zm0 80Z"/></svg> Our service
       </h2>
       <div className="services-content">
         
@@ -273,7 +273,7 @@ export default function HomePage() {
 
           {/* Review Section */}
 
-          <h2 className="client-title" style={{ marginTop: '50px' }}>💬 What our clients say</h2>
+          <h2 className="client-title" style={{ marginTop: '50px' }}> <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="#414141ff"><path d="M880-80 720-240H320q-33 0-56.5-23.5T240-320v-40h440q33 0 56.5-23.5T760-440v-280h40q33 0 56.5 23.5T880-640v560ZM160-473l47-47h393v-280H160v327ZM80-280v-520q0-33 23.5-56.5T160-880h440q33 0 56.5 23.5T680-800v280q0 33-23.5 56.5T600-440H240L80-280Zm80-240v-280 280Z"/></svg>  What our clients say</h2>
         
 
           <MDBContainer fluid className="py-5">

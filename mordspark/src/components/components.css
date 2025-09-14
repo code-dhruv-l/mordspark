@@ -131,7 +131,11 @@
         -webkit-backdrop-filter: blur(10px);
         box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         border-radius: 0 0 15px 15px;
-        padding: 0;
+        padding: 0; 
+    }
+
+    .navbar{
+        width: 90%;
     }
 
     .navbar-links.active {
@@ -205,6 +209,7 @@
         width: 30px;
         height: 25px;
         cursor: pointer;
+        margin-right: 30px;
     }
 
     .navbar-toggle .bar {
